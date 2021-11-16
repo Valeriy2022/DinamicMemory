@@ -10,12 +10,12 @@ void FillRand(int** arr, const int rows, const int cols);
 void Print(int arr[], const unsigned int n);
 void Print(int** arr, const int rows, const int cols);
 
-int* push_back(int arr[], unsigned int& n, int value);
-int* push_front(int arr[], unsigned int& n, int value);
-int* insert(int arr[], unsigned int& n, int value, unsigned int index);
-int* pop_back(int arr[], unsigned int& n);
-int* pop_front(int arr[], unsigned int& n);
-int* erase(int arr[], unsigned int& n, unsigned int index);
+//int* push_back(int arr[], unsigned int& n, int value);
+//int* push_front(int arr[], unsigned int& n, int value);
+//int* insert(int arr[], unsigned int& n, int value, unsigned int index);
+//int* pop_back(int arr[], unsigned int& n);
+//int* pop_front(int arr[], unsigned int& n);
+//int* erase(int arr[], unsigned int& n, unsigned int index);
 
 int** allocate(const unsigned int rows, const unsigned int cols);
 void clear(int** arr, const unsigned int rows);
