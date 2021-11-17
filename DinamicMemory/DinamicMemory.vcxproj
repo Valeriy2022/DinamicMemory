@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="D_Arr_2.cpp" />
+    <ClCompile Include="FillRand.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Print.cpp" />
+    <ClCompile Include="D_Arr_1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D_Arr_1.h" />
+    <ClInclude Include="D_Arr_2.h" />
+    <ClInclude Include="FillRand.h" />
+    <ClInclude Include="Print.h" />
+    <ClInclude Include="StdAFX.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
