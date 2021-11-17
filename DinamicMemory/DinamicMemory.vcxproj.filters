@@ -30,6 +30,9 @@
     <ClCompile Include="D_Arr_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MknclrArr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StdAFX.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D_Arr_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MknclrArr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

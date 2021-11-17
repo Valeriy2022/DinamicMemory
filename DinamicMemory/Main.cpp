@@ -6,9 +6,9 @@
 #include"D_Arr_2.h"
 #include"D_Arr_1.cpp"
 #include"D_Arr_2.cpp"
+#include"MknclrArr.cpp"
+#include"MknclrArr.h"
 
-template<typename T>T** allocate(const unsigned int rows, const unsigned int cols);
-template<typename T>void clear(T** arr, const unsigned int rows);
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
@@ -131,30 +131,5 @@ void main()
 
 }
 
-template<typename T>T** allocate(const unsigned int rows, const unsigned int cols)
-{
-	///////////////////////////////////////////////////////////////////////////////
-	////////////		Объявление двумерного динамического массива		///////////
-	///////////////////////////////////////////////////////////////////////////////
-	T** arr = new T * [rows];	//Создаем массив указателей
-	for (int i = 0; i < rows; i++)
-	{
-		arr[i] = new T[cols]{};	//Выделяем память под строки двумерного массива
-		//и помещаем адреса строк в элементы массива указателей.
-	}
-	return arr;
-}
-template<typename T>void clear(T** arr, const unsigned int rows)
-{
-	///////////////////////////////////////////////////////////////////////////////
-	////////////		Удаление двумерного динамического массива		///////////
-	///////////////////////////////////////////////////////////////////////////////
-	//1) Удаляем строки двумерного массива:
-	for (int i = 0; i < rows; i++)
-	{
-		delete[] arr[i];
-	}
-	//2) Удаляем массив указателей:
-	delete[] arr;
-}
+
 
