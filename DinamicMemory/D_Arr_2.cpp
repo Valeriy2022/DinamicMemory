@@ -7,7 +7,7 @@ template<typename T>T** push_row_back(T** arr, unsigned int& rows, const unsigne
 		buffer[i] = arr[i];
 	delete[] arr;	//Удаляем старый массив указателей
 	arr = buffer;
-	arr[rows] = new T*[cols]{};
+	arr[rows] = new T[cols]{};
 	rows++;
 	return arr;
 }
