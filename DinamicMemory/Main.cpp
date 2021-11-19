@@ -216,7 +216,7 @@ template<typename T>void Print(T** arr, const int rows, const int cols)
 	}
 }
 
-template<typename T> T* push_back(T arr[], unsigned int& n, int value)
+template<typename T> T* push_back(T arr[], unsigned int& n, T value)
 {
 	//1) Создаем буферный массив:
 	T* buffer = new T[n + 1]{};
@@ -317,14 +317,15 @@ template<typename T>void clear(T** arr, const unsigned int rows)
 
 template<typename T>T** push_row_back(T** arr, unsigned int& rows, const unsigned int cols)
 {
-	T** buffer = new T* [rows + 1]{};	//Создаем новый массив указателей
-	for (int i = 0; i < rows; i++)
-		buffer[i] = arr[i];
-	delete[] arr;	//Удаляем старый массив указателей
-	arr = buffer;
-	arr[rows] = new T[cols] {};
-	rows++;
-	return arr;
+	//T** buffer = new T* [rows + 1]{};	//Создаем новый массив указателей
+	//for (int i = 0; i < rows; i++)
+	//	buffer[i] = arr[i];
+	//delete[] arr;	//Удаляем старый массив указателей
+	//arr = buffer;
+	//arr[rows] = new T[cols] {};
+	//rows++;
+	//return arr;
+	return push_back(arr, rows, new T[cols]{});
 }
 template<typename T>T** pop_row_back(T** arr, unsigned int& rows, const unsigned int cols)
 {
